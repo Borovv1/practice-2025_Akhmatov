@@ -147,6 +147,22 @@
             margin-top: 2rem;
         }
         
+        /* Новые стили для большого фото команды */
+        .team-photo-large {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin: 2rem auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 3px solid var(--accent);
+        }
+
+        .team-section {
+            text-align: center;
+        }
+        
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
@@ -178,14 +194,13 @@
     <div class="container">
         <section id="home">
             <h2>Добро пожаловать на наш проект!</h2>
-            <img src="https://via.placeholder.com/800x400?text=Проект+помощи+людям+с+ОВЗ" alt="Проект помощи людям с ОВЗ" class="project-image">
+            <img src="images/сайт.jpg" alt="Проект помощи людям с ОВЗ" class="project-image">
             <p>Наш проект направлен на создание удобной веб-платформы, которая поможет людям с ограниченными возможностями здоровья получать необходимую помощь от волонтеров в городской среде.</p>
             <p>Основная цель - обеспечить комфортное передвижение по городу для людей с ОВЗ, создав систему оперативного взаимодействия между нуждающимися в помощи и волонтерами.</p>
         </section>
         
         <section id="about">
             <h2>О проекте</h2>
-            <img src="https://via.placeholder.com/800x300?text=Схема+работы+платформы" alt="Схема работы платформы" class="project-image">
             <h3>Цели проекта</h3>
             <ul>
                 <li>Создание удобного инструмента для коммуникации между людьми с ОВЗ и волонтерами</li>
@@ -221,13 +236,9 @@
             <h2>Участники проекта</h2>
             <p>Над проектом работает команда студентов группы 241-331 под руководством куратора Соловей Л.Б.</p>
             
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="https://via.placeholder.com/100?text=Фото" alt="Фото участника" class="member-photo">
-                    <h3>Ахматов Алихан</h3>
-                    <p><strong>Роль:</strong> Frontend-разработчик</p>
-                    <p><strong>Вклад:</strong> Разработка карты</p>
-                </div>
+            <div class="team-section">
+                <img src="images/команда.JPG" alt="Фото всей команды проекта" class="team-photo-large">
+                <p><em>Наша дружная команда, работающая над созданием платформы для помощи людям с ОВЗ</em></p>
             </div>
         </section>
         
@@ -236,14 +247,14 @@
             
             <div class="journal-entry">
                 <h3>Начало работы над проектом</h3>
-                <p class="journal-date">15 марта 2023</p>
+                <p class="journal-date">15 марта 2025</p>
                 <p>Сформирована команда проекта, проведено первое совещание с куратором. Определены основные цели и задачи проекта, составлен предварительный план работы.</p>
                 <p>Начата работа над техническим заданием и анализом существующих решений.</p>
             </div>
             
             <div class="journal-entry">
                 <h3>Завершение проектирования</h3>
-                <p class="journal-date">5 апреля 2023</p>
+                <p class="journal-date">5 апреля 2025</p>
                 <p>Завершена работа над архитектурой проекта и дизайн-макетами. Подготовлены:</p>
                 <ul>
                     <li>Схема базы данных</li>
@@ -254,16 +265,6 @@
                 <p>Начата разработка frontend-части проекта.</p>
             </div>
             
-            <div class="journal-entry">
-                <h3>Первый рабочий прототип</h3>
-                <p class="journal-date">20 мая 2023</p>
-                <p>Готов первый рабочий прототип платформы с базовым функционалом:</p>
-                <ul>
-                    <li>Реализована система регистрации</li>
-                    <li>Добавлена интерактивная карта</li>
-                    <li>Созданы личные кабинеты</li>
-                </ul>
-                <p>Начат этап тестирования с привлечением фокус-группы.</p>
             </div>
         </section>
         
@@ -272,15 +273,15 @@
             
             <h3>Организации-партнеры</h3>
             <ul class="resources-list">
-                <li><a href="https://мосволонтер.рф" target="_blank">Мосволонтер - официальный сайт</a></li>
-                <li><a href="https://socialnaya-podderzhka.ru" target="_blank">Центр социальной поддержки</a></li>
+                <li><a href="https://mosvolonter.ru/" target="_blank">Мосволонтер - официальный сайт</a></li>
+                <li><a href="https://msupport.dszn.ru/" target="_blank">Центр социальной поддержки</a></li>
             </ul>
             
             <h3>Полезные материалы</h3>
             <ul class="resources-list">
-                <li><a href="https://example.com/accessibility-guide" target="_blank">Руководство по доступности веб-сайтов</a></li>
-                <li><a href="https://example.com/volunteer-best-practices" target="_blank">Лучшие практики волонтерской работы</a></li>
-                <li><a href="https://example.com/inclusive-design" target="_blank">Принципы инклюзивного дизайна</a></li>
+                <li><a href="https://habr.com/ru/companies/ispring/articles/564446/" target="_blank">Руководство по доступности веб-сайтов</a></li>
+                <li><a href="https://cspn-verhket.tom.socinfo.ru/media/2020/07/23/1258154980/Praktika.pdf" target="_blank">Лучшие практики волонтерской работы</a></li>
+                <li><a href="https://habr.com/ru/companies/clevertec/articles/883258/" target="_blank">Принципы инклюзивного дизайна</a></li>
             </ul>
             
             <h3>Техническая документация</h3>
